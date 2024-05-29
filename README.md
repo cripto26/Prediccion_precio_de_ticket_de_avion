@@ -5,6 +5,8 @@ Este proyecto tiene como objetivo predecir los precios de los boletos de avión 
 
  ## Estructura del Proyecto
 Fase 1: Limpieza de datos y creación de modelo predictivo.
+
 Fase 2: Dockerizacion del modelo predictivo.
-Fase 3: Desoliegue de API REST en Docker
+
+Fase 3: Desoliegue de API REST en Docker.
  
