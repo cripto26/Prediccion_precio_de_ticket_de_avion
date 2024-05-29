@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+</head>
+{% if prediction %}
+        <h2>Prediction: {{ prediction }}$</h2>
+    {% endif %}
+<body>
+    <h1>Flight Price Prediction</h1>
+    <form id="prediction-form" action="/predict" method="post">
+        <label for="Total_Stops">Total Stops:</label>
+        <input type="number" id="Total_Stops" name="Total_Stops" required><br><br>
+        
+        <label for="Route_1">Route 1:</label>
+        <input type="text" id="Route_1" name="Route_1" required><br><br>
+        
+        <label for="Route_2">Route 2:</label>
+        <input type="text" id="Route_2" name="Route_2"><br><br>
+        
+        <label for="Route_3">Route 3:</label>
+        <input type="text" id="Route_3" name="Route_3"><br><br>
+        
+        <label for="Route_4">Route 4:</label>
+        <input type="text" id="Route_4" name="Route_4"><br><br>
+        
+        <label for="Route_5">Route 5:</label>
+        <input type="text" id="Route_5" name="Route_5"><br><br>
+        
+        <label for="Air India">Air India:</label>
+        <input type="text" id="Air India" name="Air India" value="False"><br><br>
+        
+        <label for="GoAir">GoAir:</label>
+        <input type="text" id="GoAir" name="GoAir" value="False"><br><br>
+        
+        <label for="IndiGo">IndiGo:</label>
+        <input type="text" id="IndiGo" name="IndiGo" value="False"><br><br>
+        
+        <label for="Jet Airways">Jet Airways:</label>
+        <input type="text" id="Jet Airways" name="Jet Airways" value="False"><br><br>
+        
+        <label for="Jet Airways Business">Jet Airways Business:</label>
+        <input type="text" id="Jet Airways Business" name="Jet Airways Business" value="False"><br><br>
+        
+        <label for="Multiple carriers">Multiple carriers:</label>
+        <input type="text" id="Multiple carriers" name="Multiple carriers" value="False"><br><br>
+        
+        <label for="Multiple carriers Premium economy">Multiple carriers Premium economy:</label>
+        <input type="text" id="Multiple carriers Premium economy" name="Multiple carriers Premium economy" value="False"><br><br>
+        
+        <label for="SpiceJet">SpiceJet:</label>
+        <input type="text" id="SpiceJet" name="SpiceJet" value="False"><br><br>
+        
+        <label for="Vistara">Vistara:</label>
+        <input type="text" id="Vistara" name="Vistara" value="False"><br><br>
+        
+        <label for="Vistara Premium economy">Vistara Premium economy:</label>
+        <input type="text" id="Vistara Premium economy" name="Vistara Premium economy" value="False"><br><br>
+        
+        <label for="Kolkata">Kolkata:</label>
+        <input type="text" id="Kolkata" name="Kolkata" value="False"><br><br>
+        
+        <label for="Mumbai">Mumbai:</label>
+        <input type="text" id="Mumbai" name="Mumbai" value="False"><br><br>
+        
+        <label for="Hyderabad">Hyderabad:</label>
+        <input type="text" id="Hyderabad" name="Hyderabad" value="False"><br><br>
+        
+        <label for="New Delhi">New Delhi:</label>
+        <input type="text" id="New Delhi" name="New Delhi" value="False"><br><br>
+        
+        <label for="Journey_day">Journey day:</label>
+        <input type="number" id="Journey_day" name="Journey_day"><br><br>
+        
+        <label for="Journey_month">Journey month:</label>
+        <input type="number" id="Journey_month" name="Journey_month"><br><br>
+        
+        <label for="Dep_Time_hour">Dep Time hour:</label>
+        <input type="number" id="Dep_Time_hour" name="Dep_Time_hour"><br><br>
+        
+        <label for="Dep_Time_minute">Dep Time minute:</label>
+        <input type="number" id="Dep_Time_minute" name="Dep_Time_minute"><br><br>
+        
+        <label for="Arrival_Time_hour">Arrival Time hour:</label>
+        <input type="number" id="Arrival_Time_hour" name="Arrival_Time_hour"><br><br>
+        
+        <label for="Arrival_Time_minute">Arrival Time minute:</label>
+        <input type="number" id="Arrival_Time_minute" name="Arrival_Time_minute"><br><br>
+        
+        <label for="Duration_hours">Duration hours:</label>
+        <input type="number" id="Duration_hours" name="Duration_hours"><br><br>
+        
+        <label for="Duration_mins">Duration mins:</label>
+        <input type="number" id="Duration_mins" name="Duration_mins"><br><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2>Load Example Data</h2>
+    <div id="examples">
+        <button type="button" onclick='loadExample({"Total_Stops":0,"Route_1":0,"Route_2":13,"Route_3":29,"Route_4":13,"Route_5":5,"Air India":"False","GoAir":"False","IndiGo":"True","Jet Airways":"False","Jet Airways Business":"False","Multiple carriers":"False","Multiple carriers Premium economy":"False","SpiceJet":"False","Vistara":"False","Vistara Premium economy":"False","Kolkata":"False","Mumbai":"False","Hyderabad":"False","New Delhi":"True","Journey_day":24,"Journey_month":3,"Dep_Time_hour":22,"Dep_Time_minute":20,"Arrival_Time_hour":1,"Arrival_Time_minute":10,"Duration_hours":2,"Duration_mins":50});'>Example 1</button>
+        <button type="button" onclick='loadExample({"Total_Stops":2,"Route_1":2,"Route_2":25,"Route_3":1,"Route_4":3,"Route_5":5,"Air India":"True","GoAir":"False","IndiGo":"False","Jet Airways":"False","Jet Airways Business":"False","Multiple carriers":"False","Multiple carriers Premium economy":"False","SpiceJet":"False","Vistara":"False","Vistara Premium economy":"False","Kolkata":"False","Mumbai":"False","Hyderabad":"False","New Delhi":"False","Journey_day":1,"Journey_month":5,"Dep_Time_hour":5,"Dep_Time_minute":50,"Arrival_Time_hour":13,"Arrival_Time_minute":15,"Duration_hours":7,"Duration_mins":25});'>Example 2</button>
+        <button type="button" onclick='loadExample({"Total_Stops":2,"Route_1":3,"Route_2":32,"Route_3":4,"Route_4":5,"Route_5":5,"Air India":"False","GoAir":"False","IndiGo":"False","Jet Airways":"True","Jet Airways Business":"False","Multiple carriers":"False","Multiple carriers Premium economy":"False","SpiceJet":"False","Vistara":"False","Vistara Premium economy":"False","Kolkata":"False","Mumbai":"False","Hyderabad":"False","New Delhi":"False","Journey_day":9,"Journey_month":6,"Dep_Time_hour":9,"Dep_Time_minute":25,"Arrival_Time_hour":4,"Arrival_Time_minute":25,"Duration_hours":19,"Duration_mins":0});'>Example 3</button>
+        <button type="button" onclick='loadExample({"Total_Stops":1,"Route_1":2,"Route_2":34,"Route_3":3,"Route_4":13,"Route_5":5,"Air India":"False","GoAir":"False","IndiGo":"True","Jet Airways":"False","Jet Airways Business":"False","Multiple carriers":"False","Multiple carriers Premium economy":"False","SpiceJet":"False","Vistara":"False","Vistara Premium economy":"False","Kolkata":"False","Mumbai":"False","Hyderabad":"False","New Delhi":"False","Journey_day":12,"Journey_month":5,"Dep_Time_hour":18,"Dep_Time_minute":5,"Arrival_Time_hour":23,"Arrival_Time_minute":30,"Duration_hours":5,"Duration_mins":25});'>Example 4</button>
+        <button type="button" onclick='loadExample({"Total_Stops":1,"Route_1":0,"Route_2":34,"Route_3":8,"Route_4":13,"Route_5":5,"Air India":"False","GoAir":"False","IndiGo":"True","Jet Airways":"False","Jet Airways Business":"False","Multiple carriers":"False","Multiple carriers Premium economy":"False","SpiceJet":"False","Vistara":"False","Vistara Premium economy":"False","Kolkata":"False","Mumbai":"False","Hyderabad":"False","New Delhi":"True","Journey_day":1,"Journey_month":3,"Dep_Time_hour":16,"Dep_Time_minute":50,"Arrival_Time_hour":21,"Arrival_Time_minute":35,"Duration_hours":4,"Duration_mins":45});'>Example 5</button>
+    </div>
+
+   
+
+    <script>
+        function loadExample(data) {
+            for (const key in data) {
+                if (data.hasOwnProperty(key)) {
+                    const element = document.querySelector(`[name="${key}"]`);
+                    if (element) {
+                        element.value = data[key];
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
