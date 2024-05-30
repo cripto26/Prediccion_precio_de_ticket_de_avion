@@ -1,5 +1,5 @@
 
-** # Predicción de Precio de Ticket de Avión - Fase 1**
+ # Predicción de Precio de Ticket de Avión - Fase 1
 
 ## Descripción
 En esta fase, nos centramos en la recolección y limpieza de datos necesarios para el análisis y la construcción del modelo predictivo. Esta etapa es crucial para asegurar la calidad de los datos y preparar el conjunto de datos para su uso en fases posteriores.
