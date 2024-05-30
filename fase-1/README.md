@@ -23,13 +23,13 @@ Se tratan valores faltantes y se corrigen entradas incorrectas o inconsistentes.
 ## Instalación
 Clona el repositorio y navega a la carpeta de la fase-1:
 
-git clone https://github.com/cripto26/Prediccion_precio_de_ticket_de_avion.git
+*git clone https://github.com/cripto26/Prediccion_precio_de_ticket_de_avion.git*
 
-cd Prediccion_precio_de_ticket_de_avion/fase-1
+*cd Prediccion_precio_de_ticket_de_avion/fase-1*
 
 nstala las dependencias:
 
-pip install -r requirements.txt
+*pip install -r requirements.txt*
 
 Abre Jupyter Notebook:
 
