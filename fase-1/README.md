@@ -31,7 +31,7 @@ Clona el repositorio y navega a la carpeta de la fase-1:
 
 **pip install -r requirements.txt**
 
-##Abre Jupyter Notebook:
+## Abre Jupyter Notebook:
 
 **jupyter notebook**
 
