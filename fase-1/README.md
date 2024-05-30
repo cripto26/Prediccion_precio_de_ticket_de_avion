@@ -28,9 +28,11 @@ git clone https://github.com/cripto26/Prediccion_precio_de_ticket_de_avion.git
 cd Prediccion_precio_de_ticket_de_avion/fase-1
 
 nstala las dependencias:
+
 pip install -r requirements.txt
 
 Abre Jupyter Notebook:
+
 jupyter notebook
 
 
