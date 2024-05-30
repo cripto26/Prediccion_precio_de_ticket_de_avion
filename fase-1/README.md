@@ -6,12 +6,12 @@ En esta fase, nos centramos en la recolección y limpieza de datos necesarios pa
 
 ## Contenido del Notebook
 
-Importación de librerías
+## Importación de librerías
 
 Se utilizan librerías como pandas, numpy, matplotlib, seaborn, plotly, y varias herramientas de scikit-learn.
 Se establece el estilo de los gráficos con plt.style.use('fivethirtyeight').
 
-Importación del dataset
+## Importación del dataset
 
 Se carga el dataset desde un archivo Excel (Data_Train.xlsx).
 
