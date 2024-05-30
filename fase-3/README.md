@@ -1,25 +1,27 @@
 
 
- # Predicción de Precio de Ticket de Avión - Fase 2
+ # Predicción de Precio de Ticket de Avión - Fase 3
 
 ## Descripción
-En esta fase, configuramos un contenedor de Docker con todas las librerías necesarias para correr el modelo de predicción.
+En esta fase, nos centramos en la implementación del modelo predictivo en una aplicación web utilizando Flask. Esta fase incluye la creación del modelo, la configuración del servidor web y la interfaz de usuario para realizar predicciones.
 
 ## Estructura del Proyecto
 
-**Dockerfile:**  Archivo para la construcción de la imagen Docker.
+**Dockerfile:** Archivo para la construcción de la imagen Docker.
 
-**entrypoint.sh:**  Script de entrada para ejecutar los procesos de entrenamiento y predicción.
+**entrypoint.sh:** Script de entrada para ejecutar los procesos de creación del modelo y el servidor Flask.
 
-**predict.py:**  Script para realizar las predicciones utilizando el modelo entrenado.
+**predict.html:** Archivo HTML que sirve como interfaz de usuario para realizar predicciones.
 
-**train.py:**  Script para entrenar el modelo de predicción.
+**createModel.py:** Script para crear y guardar el modelo predictivo.
 
-**30_predict.csv:**  Archivo con las predicciones generadas.
+**myrestapi.py:** Script que define la API REST con Flask para realizar las predicciones.
 
-**Data_Train.xlsx:**  Dataset utilizado para el entrenamiento.
+**dataframe.csv:** Dataset utilizado para crear el modelo.
 
-**requirements.txt:**  Lista de dependencias necesarias para el proyecto.
+**30_predict.csv:** Archivo con las predicciones generadas.
+
+**requirements.txt:** Lista de dependencias necesarias para el proyecto.
 
 # Instalación
 
