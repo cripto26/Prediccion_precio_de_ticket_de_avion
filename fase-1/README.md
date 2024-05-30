@@ -4,7 +4,7 @@
 ## Descripción
 En esta fase, nos centramos en la recolección y limpieza de datos necesarios para el análisis y la construcción del modelo predictivo. Esta etapa es crucial para asegurar la calidad de los datos y preparar el conjunto de datos para su uso en fases posteriores.
 
-## Contenido del Notebook
+# Contenido del Notebook
 
 ## Importación de librerías
 
