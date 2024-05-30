@@ -7,13 +7,13 @@ En esta fase, configuramos un contenedor de Docker con todas las librerías nece
 
 ## Estructura del Proyecto
 
-**Dockerfile:** Archivo para la construcción de la imagen Docker.
-**entrypoint.sh:** Script de entrada para ejecutar los procesos de entrenamiento y predicción.
-**predict.py:** Script para realizar las predicciones utilizando el modelo entrenado.
-**train.py:** Script para entrenar el modelo de predicción.
-**30_predict.csv:** Archivo con las predicciones generadas.
-**Data_Train.xlsx:** Dataset utilizado para el entrenamiento.
-**requirements.txt:** Lista de dependencias necesarias para el proyecto.
+**Dockerfile:**  Archivo para la construcción de la imagen Docker.
+**entrypoint.sh:**  Script de entrada para ejecutar los procesos de entrenamiento y predicción.
+**predict.py:**  Script para realizar las predicciones utilizando el modelo entrenado.
+**train.py:**  Script para entrenar el modelo de predicción.
+**30_predict.csv:**  Archivo con las predicciones generadas.
+**Data_Train.xlsx:**  Dataset utilizado para el entrenamiento.
+**requirements.txt:**  Lista de dependencias necesarias para el proyecto.
 
 # Instalación
 
