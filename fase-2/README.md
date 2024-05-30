@@ -23,22 +23,24 @@ En esta fase, configuramos un contenedor de Docker con todas las librerías nece
 
 # Instalación
 
-## Clona el repositorio y navega a la carpeta de la fase-1:
+## Clona el repositorio y navega a la carpeta de la fase-2:
 
 **git clone https://github.com/cripto26/Prediccion_precio_de_ticket_de_avion.git**
 
-**cd Prediccion_precio_de_ticket_de_avion/fase-1**
+**cd Prediccion_precio_de_ticket_de_avion/fase-2**
 
-## Instala las dependencias:
+# Uso
 
-**pip install -r requirements.txt**
+## Construye la imagen de Docker:
 
-## Abre Jupyter Notebook:
+**docker build -t prediccion_precio_ticket .**
 
-**jupyter notebook**
+## Ejecuta el contenedor:
+
+**docker run --rm prediccion_precio_ticket**
 
 
-Ejecuta el notebook Prediccion_precio_del_ticket_de_avion.ipynb para seguir los pasos de importación y limpieza de datos.
+
 
 
 
