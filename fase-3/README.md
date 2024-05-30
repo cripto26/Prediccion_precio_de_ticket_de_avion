@@ -25,11 +25,11 @@ En esta fase, nos centramos en la implementación del modelo predictivo en una a
 
 # Instalación
 
-## Clona el repositorio y navega a la carpeta de la fase-2:
+## Clona el repositorio y navega a la carpeta de la fase-3:
 
 **git clone https://github.com/cripto26/Prediccion_precio_de_ticket_de_avion.git**
 
-**cd Prediccion_precio_de_ticket_de_avion/fase-2**
+**cd Prediccion_precio_de_ticket_de_avion/fase-3**
 
 # Uso
 
@@ -39,5 +39,7 @@ En esta fase, nos centramos en la implementación del modelo predictivo en una a
 
 ## Ejecuta el contenedor:
 
-**docker run --rm prediccion_precio_ticket**
+**docker run --rm -p 5000:5000 prediccion_precio_ticket**
+
+## Abre tu navegador y ve a http://localhost:5000 para acceder a la interfaz de usuario.
 
