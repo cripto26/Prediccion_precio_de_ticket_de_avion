@@ -10,9 +10,10 @@ Importación de librerías
 
 Se utilizan librerías como pandas, numpy, matplotlib, seaborn, plotly, y varias herramientas de scikit-learn.
 Se establece el estilo de los gráficos con plt.style.use('fivethirtyeight').
-Importación del dataset
 
+Importación del dataset
 Se carga el dataset desde un archivo Excel (Data_Train.xlsx).
+
 Exploración y limpieza de datos
 
 Se realizan operaciones de inspección inicial del dataset.
