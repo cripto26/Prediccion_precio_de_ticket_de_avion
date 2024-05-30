@@ -27,13 +27,13 @@ Clona el repositorio y navega a la carpeta de la fase-1:
 
 **cd Prediccion_precio_de_ticket_de_avion/fase-1**
 
-nstala las dependencias:
+## Instala las dependencias:
 
 **pip install -r requirements.txt**
 
-Abre Jupyter Notebook:
+##Abre Jupyter Notebook:
 
-jupyter notebook
+**jupyter notebook**
 
 
 Ejecuta el notebook Prediccion_precio_del_ticket_de_avion.ipynb para seguir los pasos de importación y limpieza de datos.
