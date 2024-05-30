@@ -43,7 +43,7 @@ En esta fase, nos centramos en la implementación del modelo predictivo en una a
 
 **Abre tu navegador y ve a http://localhost:5000 para acceder a la interfaz de usuario.**
 
-**Escoge cualquiera de los 5 ejemplos o llena el formulario a mano**
+**Escoge cualquiera de los 5 ejemplos o llena el formulario a mano.**
 
-**Click en el boton predict**
+**Click en el boton predict.**
 
