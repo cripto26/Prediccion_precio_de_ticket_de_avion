@@ -20,8 +20,9 @@ Exploración y limpieza de datos
 Se realizan operaciones de inspección inicial del dataset.
 Se tratan valores faltantes y se corrigen entradas incorrectas o inconsistentes.
 
-## Instalación
-Clona el repositorio y navega a la carpeta de la fase-1:
+# Instalación
+
+## Clona el repositorio y navega a la carpeta de la fase-1:
 
 **git clone https://github.com/cripto26/Prediccion_precio_de_ticket_de_avion.git**
 
